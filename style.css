@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +10,43 @@
     display: flex;
 }
 
-.sidebar {
+#sidebar {
     height: 100vh;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
     width: 20%;
 }
 
-.main-content {
+#sidebar>img {
+    width: 103px;
+    height: 29px;
+    margin: 40px 0px 0px 24px;
+}
+
+#sidebar>ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#sidebar>ul>li {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+#sidebar>ul>li>img {
+    padding: 16px;
+}
+
+
+#main-content {
     height: 100vh;
     background-color: pink;
     overflow: hidden;
     width: 80%;
+    overflow-y: scroll;
 }
