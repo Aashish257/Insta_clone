@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     width: 20%;
+    border-right: 1px solid black;
 }
 
 #sidebar>img {
@@ -45,19 +46,41 @@
 /* Main */
 
 #main-content {
-    height: 100vh;
-    background-color: pink;
     overflow: hidden;
     width: 80%;
-    overflow-y: scroll;
     padding: 30px;
 }
 
+.story {
+    width: 64px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.story p {
+font-style: Regular;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.12px;
+text-align: center;
+vertical-align: middle;
+}
+
+.stories-image {
+    background-image: url(./assets/ring.png);
+    width: 66px;
+    height: 66px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .stories-section {
+    margin: 20px;
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
 }
 
@@ -65,4 +88,11 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
+}
+
+/* Footer Section */
+
+footer {
+    width: 319px;
+    border: 1px solid black;
 }
